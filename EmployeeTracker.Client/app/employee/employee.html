@@ -1,0 +1,52 @@
+﻿<div class="template animated slideInRight">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Employees <small>Sort Your Data</small></h2>
+            <ol class="breadcrumb">
+                <li><a ui-sref="home.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li class="active"><i class="fa fa-table"></i> {{vm.title}}</li>
+            </ol>
+            <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                We're using <a class="alert-link" href="https://github.com/ziscloud/angular-footable" target="_blank">angular-footable</a> for the sort and paging function on the grid. Read the documentation for more customization options or feel free to use something else!
+            </div>
+        </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table class="table footable table-bordered table-hover table-striped toggle-arrow-tiny" data-page-size="20" data-limit-navigation="20" ep-foo-table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Office</th>
+                        <th>Position</th>
+                        <th data-hide="phone">Sex</th>
+                        <th data-hide="phone" data-type="number">Age</th>
+                        <th data-hide="phone">Start Date</th>
+                        <th data-hide="phone" data-type="number">Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employee in vm.employees">
+                        <td>{{::employee.name}}</td>
+                        <td>{{::employee.office}}</td>
+                        <td>{{::employee.position}}</td>
+                        <td>{{::employee.sex}}</td>
+                        <td>{{::employee.age}}</td>
+                        <td>{{::employee.startDate | date: 'yyyy-MM-dd' }}</td>
+                        <td>{{::employee.salary | currency }}</td>
+                    </tr>
+                </tbody>
+                <tfoot class="hide-if-no-paging">
+                <td colspan="7">
+                    <ul class="pagination pull-right"></ul>
+                </td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="../../app/loading-bars/loading-bars.js"></script>

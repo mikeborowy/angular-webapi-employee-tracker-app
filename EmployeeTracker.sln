@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTracker.Services", "EmployeeTracker.Services\EmployeeTracker.Services.csproj", "{AE7291FA-C4F3-454A-8930-FEEAA7F15930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTracker.API", "EmployeeTracker.API\EmployeeTracker.API.csproj", "{2111EF36-0D4A-4D8F-ACE5-2503B4502982}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE7291FA-C4F3-454A-8930-FEEAA7F15930} = {AE7291FA-C4F3-454A-8930-FEEAA7F15930}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTracker.Client", "EmployeeTracker.Client\EmployeeTracker.Client.csproj", "{EB2185B7-E0B7-4715-9CB0-C31E9A9DC15D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7291FA-C4F3-454A-8930-FEEAA7F15930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7291FA-C4F3-454A-8930-FEEAA7F15930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7291FA-C4F3-454A-8930-FEEAA7F15930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7291FA-C4F3-454A-8930-FEEAA7F15930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2111EF36-0D4A-4D8F-ACE5-2503B4502982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2111EF36-0D4A-4D8F-ACE5-2503B4502982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2111EF36-0D4A-4D8F-ACE5-2503B4502982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2111EF36-0D4A-4D8F-ACE5-2503B4502982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2185B7-E0B7-4715-9CB0-C31E9A9DC15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2185B7-E0B7-4715-9CB0-C31E9A9DC15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2185B7-E0B7-4715-9CB0-C31E9A9DC15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2185B7-E0B7-4715-9CB0-C31E9A9DC15D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

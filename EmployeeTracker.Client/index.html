@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="employeeApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Employee Tracker</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/sb-admin-2.css">
+    <link rel="stylesheet" href="css/nv.d3.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/metisMenu.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-footable/2.0.3/css/footable.core.min.css" />
+    <link href="app/loading-bars/loading-bars.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Simple splash screen with loading bars -->
+    <div class="splash">
+        <div class="color-line"></div>
+        <div class="splash-title">
+            <h1>Employee Tracker</h1>
+            <img src="app/loading-bars/loading-bars.svg" width="64" height="64" />
+        </div>
+    </div>
+
+    <!-- Inject the view here  -->
+    <div ui-view></div>
+
+    <!-- Vendor js libraries -->
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.3/nv.d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.6/angular-nvd3.min.js"></script>
+    <script src="scripts/moment.min.js"></script>
+    <script src="scripts/metisMenu.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-footable/2.0.3/js/footable.all.min.js"></script>
+    <script src="scripts/angular-footable.min.js"></script>
+    <script src="scripts/sb-admin-2.js"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/loading-bars/loading-bars.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.constant.js"></script>
+
+    <!-- App - Common module -->
+    <script src="app/common/common.module.js"></script>
+    <script src="app/common/services/common.service.js"></script>
+
+    <!-- App - Layout module-->
+    <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/shell.controller.js"></script>
+
+    <!-- App - Dashboard feature -->
+    <script src="app/dashboard/dashboard.controller.js"></script>
+    <script src="app/dashboard/dashboard.service.js"></script>
+
+    <!-- App - Employee feature -->
+    <script src="app/employee/employee.controller.js"></script>
+    <script src="app/employee/employee.service.js"></script>
+    <script src="app/employee/employee.model.js"></script>
+    <script src="app/employee/directives/footable.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\bin\Debug\EmployeeTracker.Services.dll
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\bin\Debug\EmployeeTracker.Services.pdb
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\bin\Debug\Dapper.dll
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\bin\Debug\Dapper.pdb
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\bin\Debug\Dapper.xml
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\obj\Debug\EmployeeTracker.Services.dll
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\obj\Debug\EmployeeTracker.Services.pdb
+D:\Dev\AngularTest\EmployeeTracker\EmployeeTracker.Services\obj\Debug\EmployeeTracker.Services.csprojResolveAssemblyReference.cache
